@@ -1,0 +1,5 @@
+package com.hdfc.capstone.employeemanagement.repository;
+
+public interface EmployeeRepository {
+
+}

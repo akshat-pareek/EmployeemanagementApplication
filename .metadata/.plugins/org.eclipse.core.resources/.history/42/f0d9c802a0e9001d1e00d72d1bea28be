@@ -1,0 +1,5 @@
+package com.hdfc.capstone.employeemanagement.entity;
+
+public class Employee {
+
+}

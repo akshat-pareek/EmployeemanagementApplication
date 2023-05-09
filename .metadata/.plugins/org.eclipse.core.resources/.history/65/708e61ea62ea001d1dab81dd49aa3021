@@ -1,0 +1,11 @@
+package com.hdfc.capstone.employeemanagement.service;
+
+import org.springframework.http.ResponseEntity;
+
+import com.hdfc.capstone.employeemanagement.dto.EmployeeDTO;
+
+public interface IEmployeeService {
+	
+	public EmployeeDTO getEmployeeByEmployeeID(long employeeId) throws Exception;
+	
+}

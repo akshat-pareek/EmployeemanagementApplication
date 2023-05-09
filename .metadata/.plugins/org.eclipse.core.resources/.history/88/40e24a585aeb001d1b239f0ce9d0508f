@@ -1,0 +1,37 @@
+package com.hdfc.capstone.client.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.hdfc.capstone.client.config.AESDecryption;
+import com.hdfc.capstone.client.dto.EmployeeDTO;
+import com.hdfc.capstone.client.exception.EmployeeNotFoundException;
+import com.hdfc.capstone.client.exception.InvalidEmployeeIdException;
+
+@RestController
+@RequestMapping("/client")
+public class ClientRestController {
+	
+	@Autowired
+	private RestTemplate template;
+	
+	String baseUrl = "https://localhost:8181/employee/getById/";
+	
+	@GetMapping("/getById/{employeeID}")
+    public EmployeeDTO getEmployeeById(@PathVariable int employeeID) throws Exception {
+        EmployeeDTO employeeDto = template.getForObject(baseUrl + employeeID, EmployeeDTO.class);
+        try {
+			if(employeeDto==null) {
+				throw new EmployeeNotFoundException("Employee not found with ID: " + employeeID);
+			}
+			employeeDto.setDateOfBirth(AESDecryption.decrypt(employeeDto.getDateOfBirth()));
+			return employeeDto;
+		}catch(NumberFormatException exc) {
+			throw new InvalidEmployeeIdException("Provide the employeeId in long format only");
+		}
+    }
+}

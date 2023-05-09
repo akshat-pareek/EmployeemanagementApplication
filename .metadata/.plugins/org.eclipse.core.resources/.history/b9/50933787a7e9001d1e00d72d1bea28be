@@ -1,0 +1,21 @@
+package com.hdfc.capstone.employeemanagement.dto;
+
+import java.sql.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class EmployeeDTO {
+	
+	private long employeeId;
+	
+	private String employeeName;
+	
+	private Date dateOfBirth;
+}

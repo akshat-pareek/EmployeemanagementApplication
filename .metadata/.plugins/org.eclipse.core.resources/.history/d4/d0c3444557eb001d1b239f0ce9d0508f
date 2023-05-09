@@ -1,0 +1,5 @@
+package com.hdfc.capstone.client.config;
+
+public class SSLValidation {
+
+}

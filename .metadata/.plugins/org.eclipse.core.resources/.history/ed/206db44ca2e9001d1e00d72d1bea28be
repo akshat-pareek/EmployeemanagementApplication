@@ -1,0 +1,5 @@
+package com.hdfc.capstone.employeemanagement.dto;
+
+public class EmployeeDTO {
+
+}

@@ -1,0 +1,5 @@
+package com.hdfc.capstone.client.exception;
+
+public class EmployeeNotFoundException {
+
+}
