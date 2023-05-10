@@ -15,8 +15,6 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="com.hdfc.capstone.employeemanagement.repository.EmployeeRepository"/>
     <fullyQualifiedTypeName name="com.hdfc.capstone.employeemanagement.configure.AESEncryptiion"/>
-    <fullyQualifiedTypeName name="com.hdfc.capstone.employeemanagement.service.IEmployeeService"/>
-    <fullyQualifiedTypeName name="com.hdfc.capstone.employeemanagement.dto.EmployeeDTO"/>
     <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
@@ -40,8 +38,11 @@
     <fullyQualifiedTypeName name="com.hdfc.capstone.client.exception.InvalidEmployeeIdException"/>
     <fullyQualifiedTypeName name="com.hdfc.capstone.client.dto.EmployeeDTO"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
     <fullyQualifiedTypeName name="com.hdfc.capstone.client.service.IClientService"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.hdfc.capstone.employeemanagement.service.IEmployeeService"/>
+    <fullyQualifiedTypeName name="com.hdfc.capstone.employeemanagement.dto.EmployeeDTO"/>
 </qualifiedTypeNameHistroy>
